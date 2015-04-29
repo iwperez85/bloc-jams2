@@ -25,6 +25,9 @@
   margin-top: 55px;
   margin-bottom: 40px; }
 
+.album-thumbnail {
+  max-width: 100%; }
+
 .album-header-information {
   margin-top: 45px;
   margin-bottom: 20px; }
@@ -129,6 +132,15 @@ td.song-number {
 
 .collection-album-container .collection-overlay-button .fa-play {
   padding-left: 5px; }
+
+@media screen and (max-width: 768px) {
+  /* Collection View */
+  .collection-album-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    /* Width of the album image. */ } }
 
 .player-bar {
   position: fixed;
@@ -267,6 +279,26 @@ body.landing .navbar {
     letter-spacing: 1.2; }
     .player-header-nav .navbar-nav a:hover {
       color: rgba(123, 70, 163, 0.9); }
+
+@media screen and (max-width: 768px) {
+  .player-header-nav.navbar .navbar-nav li {
+    text-align: center; }
+  .player-header-nav.navbar .hero-content h1, .player-header-nav.navbar .hero-content h3 {
+    text-align: center; }
+  .player-header-nav.navbar .selling-points {
+    padding: 0; }
+    .player-header-nav.navbar .selling-points .point {
+      padding: 3em 0.75em; }
+      .player-header-nav.navbar .selling-points .point h5 {
+        height: 2.25em; }
+      .player-header-nav.navbar .selling-points .point p {
+        text-align: center;
+        font-size: 1.25em; }
+  .player-header-nav.navbar .landing-album-list {
+    /* Example class added to style the album covers for mobile */ }
+    .player-header-nav.navbar .landing-album-list .album-cover {
+      position: relative;
+      left: calc(50% - 200px); } }
 
 
 /*# sourceMappingURL=app.css.map*/
