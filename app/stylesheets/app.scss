@@ -13,8 +13,8 @@ html {
     font-family: 'Open Sans';
     color: white;
     min-height: 100%;
-    background: -webkit-radial-gradient(  #2b1339, #380c77);
-    background: radial-gradient(   #2b1339, #380c77);
+    background: -webkit-radial-gradient(  #2b1339, #7038C0);
+    background: radial-gradient(   #2b1339, #7038C0);
     padding-bottom: 150px;
   }
 
@@ -28,6 +28,24 @@ html {
   }
  /* medium-purple: #7B46A3 - 123, 70, 163 */
  
+ #navBar.navbar-default {
+    background-color: transparent;
+    border: none;
+
+    .navbar-nav > li > a{
+      line-height: 28px;
+      color: #fff;
+      font-size: 28px;
+      padding-top: 4px;
+    }
+    .collapse.in {
+      text-align: center;
+    }
+    .navbar-collapse {
+      border: none;
+    }
+ }
+
  .player-header-nav {
    background-color: rgba(123, 70, 163, .9);
     .navbar-nav {
@@ -43,6 +61,10 @@ html {
       }
     }
   }
+ }
+
+ img {
+  padding-bottom: 12px;
  }
 
 @media screen and (max-width: 768px) {
